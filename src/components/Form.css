@@ -5,9 +5,24 @@ input, button{
 }
 
 input{
-    width: 500px;
+    width: 60%;
+    z-index: 100;
+    margin-right: 3px;
+}
+
+input:focus{
+    outline: 2px solid blue;
 }
 
 button{
     background: #ececec;
+}
+
+.list-todos{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
 }

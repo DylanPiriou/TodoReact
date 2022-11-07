@@ -19,10 +19,23 @@ body{
 }
 
 .todo-app{
-  width: 60vw;
+  width: 80vw;
   height: 90vh;
   background: rgba(0, 0, 0, 0.43);
   box-shadow: 0 0 200px 50px inset rgba(0, 0, 0, 0.52);
+  overflow-y: auto;
+}
+
+.todo-app::-webkit-scrollbar{
+  width: 10px;
+}
+
+.todo-app::-webkit-scrollbar-track{
+  background: rgba(0, 0, 0, 0.43);
+}
+
+.todo-app::-webkit-scrollbar-thumb{
+  background-color: #050936;
 }
 
 .todo-app h1{
@@ -31,5 +44,5 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 5rem;
+  font-size: clamp(65px, 8vw, 8rem);
 }
